@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+</head>
+<style>
+/* css for html page */
+  .background-img {
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    box-shadow: 11px 10px 800px 100px black inset
+  }
+
+  .logo {
+    height: 2rem;
+    width: 8rem;
+
+  }
+
+  .main {
+
+    width: 100vw;
+    height: 84vh;
+
+  }
+
+  .main-h {
+    opacity: 100%;
+    letter-spacing: 0rem;
+    font-size: 3.5em;
+    font-weight: bolder;
+  }
+
+  .input-group {
+    height: 60px;
+    width: auto;
+  }
+
+  .btn-button {
+    background-color: #e50914;
+    width: 230px;
+    display: flex;
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    color: #ffff;
+    background-color: #e50914;
+    align-items: center;
+    padding-top: 5px;
+
+  }
+  @media (max-width:580px) {
+    .logo{height: 1rem; width: 5rem;
+    
+    }
+  .btn-button{width: 130px;font-size: 16px;}
+  }
+</style>
+
+<body>
+<!-- background image used as main body of webpage -->
+  <div class=" background-img bg-image " style="background-image:url('Images/background.jpg');">
+
+    <div class="container-fluid ">
+      <div class="row py-4 px-5 ">
+        <div class="col-3 ">
+          <img class="logo" src="Images/logo.jpg" alt="">
+        </div>
+        <div class="col-9 ">
+          <div class="buttonss float-end">
+
+            <select class="btn btn-outline-light mx-4 button-1 p-2" name="" id="">
+              <option value="">English</option>
+              <option value="">Hindi</option>
+
+            </select>
+            <button style="background-color: #e50914;" class="btn mx-1 text-white px-4">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row main mask d-flex text-center justify-content-center align-items-center">
+        <div class="col-lg-6 text-white">
+          <h1 class="main-h">Unlimited movies,TV
+            shows and more.</h1>
+          <p style="font-size: 2rem;">Watch anywhere. Cancel any time</p>
+          <p style="font-size: 1.5rem;">Ready to watch ? Enter your email to start membership</p>
+          <div class="input-group mb-3 ">
+            <input type="text" class="form-control" placeholder="Email Address">
+            <button class="btn text-white  btn-button bg btn-danger" type="button" id="button-addon2">Get Started</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
